@@ -23,5 +23,9 @@ Python Flask Geolocator, Ip Tracker, Device Info by URL (Ngrok Hosting)
 # Legal Disclaimer
 Usage of Locator for attacking targets without prior mutual consent is illegal. It's the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
 
+# Contributors
+- There are many ways to improve this project, feel free to contribute with your pull request
+
+
 # Contact:
-pr0xy07@tutanota.com
+- pr0xy07@tutanota.com
