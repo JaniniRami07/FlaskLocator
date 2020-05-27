@@ -1,6 +1,9 @@
 # FlaskLocator - v.2.2
 Python Flask Geolocator, Ip Tracker, Device Info by URL (Ngrok Hosting) 
 
+# Youtube Tutorial:
+https://www.youtube.com/watch?v=Yx4WXZfgBTo
+
 # Features:
 <li>Get victim's device IP address.</li>
 <li>Get victim's living country.</li>
