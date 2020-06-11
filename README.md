@@ -1,4 +1,4 @@
-# FlaskLocator - v 1.1
+# FlaskLocator 
 Python Flask Geolocator, Ip Tracker, Device Info by URL (Ngrok Hosting) 
 
 # Youtube Tutorial:
