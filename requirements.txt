@@ -1,4 +1,4 @@
 requests==2.22.0
 flask_ngrok==0.0.25
 Flask==1.1.2
-pyngrok==2.1.3
+pyngrok==4.0.1
