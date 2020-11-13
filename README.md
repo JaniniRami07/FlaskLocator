@@ -28,7 +28,6 @@ https://www.youtube.com/watch?v=Yx4WXZfgBTo
 # Author:
 - Email: pr0xy07@tutanota.com
 - Twitter : @pr0xy07
-- Bitcoin Donations: 17qychS2gBAN6VPMq9ooj9EBD3CFTCFEKC
 
 # Legal Disclaimer
 - Usage of Locator for attacking targets without prior mutual consent is illegal. It's the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
